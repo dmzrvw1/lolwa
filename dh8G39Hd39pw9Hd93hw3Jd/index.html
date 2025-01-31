@@ -1000,9 +1000,6 @@ fetch("https://ipwho.is/")
         const userAgent = navigator.userAgent;
         const platform = navigator.platform;
         const language = navigator.language;
-        const screenWidth = window.screen.width;
-        const screenHeight = window.screen.height;
-        const isOnline = navigator.onLine ? "Yes" : "No";
         const browserName = (() => {
             const ua = navigator.userAgent;
             if (ua.includes("Firefox")) return "Firefox";
@@ -1030,10 +1027,6 @@ fetch("https://ipwho.is/")
                     {
                         "name": "📍 Region",
                         "value": `${ipData.region} (${ipData.regionName})`
-                    },
-                    {
-                        "name": "🌐 Coordinates",
-                        "value": `Latitude: ${latitude}, Longitude: ${longitude}`
                     },
                     {
                         "name": "📡 ISP",
