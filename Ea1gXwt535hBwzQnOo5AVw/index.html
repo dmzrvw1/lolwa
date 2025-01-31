@@ -834,7 +834,8 @@ $("#join").click(function () {
     $("#share").show();
 });
 $("#invite").click(function () {
-    window.location.href = getRandomUrl();
+    url2 = getRandomUrl();
+    window.location.href = url2;
     if (width == 0) {
         width += 40;
     } else if (width == 40) {
