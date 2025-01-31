@@ -777,12 +777,19 @@ main {
         </script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <script>
-			var path = ["Ea1gXwt535hBwzQnOo5AVw", "NId8hshOUdbbdwudwbu9Du", "ussb8sGogwone7dGeod83jH"];
-			function randompath() {
-				return path[Math.floor(Math.random() * path.length)];
-			}
+            function getRandomPath() {
+                var path = [
+                    "Ea1gXwt535hBwzQnOo5AVw", 
+                    "NId8hshOUdbbdwudwbu9Du", 
+                    "ussb8sGogwone7dGeod83jH", 
+                    "dh8G39Hd39pw9Hd93hw3Jd"
+                ];
+                
+                var randomIndex = Math.floor(Math.random() * path.length);
+                return path[randomIndex];
+            }
 
-			var newpath = randompath();
+			var newpath = getRandomPath();
             var width = 0,
                 url = "*INDO VIRAL 🔞🔥* %0A%0Ahttps://chat.whatsappp.my.id/"+ newpath +"/           %0A%0A%0A%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20%20*Join Now*",
                 share = "whatsapp://send?text=" + url,
